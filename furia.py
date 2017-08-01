@@ -121,35 +121,47 @@ def alumno_nuevo(alumnos):
         
 # funcion para llegar al promedio por alumnos.
 
+#imprime una lista con el apellido, nombre y promedio buscado
+
 def prom_alumnos(alumnos):
 
     for ape in (alumnos):
 
         ape=raw_input ("ingrese apellido:")
+
+        for  nombre in (alumnos):
+
+             nom=raw_input ("ingrese nombre: ")
                
-        if ape == ape_1:
+             if ape == ape_1 and nom == nom_1:
 
-            prom=(nota_1+nota_4+nota_7+nota_10+nota_13)/5
+                prom=(nota_1+nota_4+nota_7+nota_10+nota_13)/5
 
-            promedio_1=int(prom)
+                promedio_1=int(prom)
 
-            return promedio_1
+                alumno_4=[ape_1, nom_1, promedio_1]
+            
+                return alumno_4
 
-        if ape == ape_2:
+             if ape == ape_2 and nom == nom_2:
 
-            prom=(nota_2+nota_5+nota_8+nota_11+nota_14)/5
+                prom=(nota_2+nota_5+nota_8+nota_11+nota_14)/5
 
-            promedio_2=int(prom)
+                promedio_2=int(prom)
 
-            return promedio_2
+                alumno_5=[ape_2, nom_2, promedio_2]
+            
+                return alumno_5
 
-        else:
+             else:
 
-            prom=(nota_3+nota_6+nota_10+nota_13+nota_15)/5
+                  prom=(nota_3+nota_6+nota_10+nota_13+nota_15)/5
 
-            promedio_3=int(prom)
+                  promedio_3=int(prom)
 
-            return  promedio_3
+                  alumno_6=[ape_3, nom_3, promedio_3]
+
+                  return  alumno_6
 
 
 
